@@ -1,0 +1,17 @@
+{
+  "name": "neon-storm-ffa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Browser-based multiplayer free-for-all FPS prototype for Railway",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "ws": "^8.18.3"
+  }
+}

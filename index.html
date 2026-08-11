@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NEON STORM: FFA</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div id="menu" class="panel">
+    <div class="eyebrow">MULTIPLAYER FREE-FOR-ALL</div>
+    <h1>NEON STORM</h1>
+    <p class="tagline">Rain. Rooftops. Bad decisions at 900 rounds per minute.</p>
+    <input id="name" maxlength="18" placeholder="Callsign" autocomplete="off" />
+    <div class="label">SELECT PRIMARY</div>
+    <div id="weapons" class="weapon-grid"></div>
+    <button id="play">DEPLOY</button>
+    <div class="small">WASD move · Shift sprint · Space jump · C slide · Mouse aim · Click fire · R reload · 1–5 switch weapon · Esc unlock cursor</div>
+  </div>
+
+  <div id="hud" class="hidden">
+    <div id="topbar"><span id="timer">10:00</span><span id="leader">Leader: -</span></div>
+    <div id="weaponName">VX-12</div>
+    <div id="crosshair"><i></i><i></i><i></i><i></i></div>
+    <div id="hitmarker">×</div>
+    <div id="damageFlash"></div>
+    <div id="stats"><div><b id="hp">100</b><small> HP</small></div><div><b id="ammo">30 / 120</b></div><span id="score">0 pts</span></div>
+    <div id="board"></div>
+    <div id="feed"></div>
+    <div id="respawn" class="hidden">RESPAWNING</div>
+    <div id="controlsHint">1–5 weapons · C slide</div>
+  </div>
+
+  <script type="module" src="/game.js"></script>
+</body>
+</html>
